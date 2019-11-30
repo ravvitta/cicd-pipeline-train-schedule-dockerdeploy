@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("ravivittal/train-schedule123")
+                    app = docker.build("ravvitta/train-schedule123")
                     app.inside {
                         sh 'echo $(curl localhost:8084)'
                     }
